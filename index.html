@@ -11,7 +11,7 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,700&display=swap" rel="stylesheet">
         
         <!--local links-->
-       <link rel="stylesheet" href="style.css">
+       <link rel="stylesheet" href="css/style.css">
     </head>
     <body data-gr-c-loaded="true" class="" >
         <header>
@@ -63,7 +63,7 @@
             <div class="container">
                <div class="row">
                     <div class="col-sm-12 col-lg-6" id="left">
-                        <img src="me.png"><br>
+                        <img src="images/me.png"><br>
                         <p>I am a sophomore student of MSIT,GGSIPU located in New Delhi,India.<br>
                              My major is Information Technology. I have passion for UI effects,creating intuitive and 
                             dynamic user experiences.
@@ -147,7 +147,7 @@
         <div class = "row">
 <!--tindog-->    
        <div class="card col-lg-4 col-sm-12" style="width: 18rem;">
-             <img src="tindog.png" class="card-img-top" alt="...">
+             <img src="images/tindog.png" class="card-img-top" alt="...">
              <div class="card-body">
              <h2 class="card-title">tindog</h2>
              <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#kar1">Know More</button>    
@@ -158,11 +158,11 @@
   <div class="modal fade bd-example-modal-lg" id="kar1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content modalhead">
-          <img src="tindog.png" class="card-img-top" alt="...">
+          <img src="images/tindog.png" class="card-img-top" alt="...">
           <h1>tindog</h1>
           <hr />
           <p>A dummy landing page based on tinder made with HTML, CSS & Bootstrap.It is a responsive page and can run on any device.</p>
-          <button type="button" class="btn"></button>
+          <button type="button" class="btn btn-primary inner">View Website</button>
       </div>
     </div>
   </div>
@@ -170,7 +170,7 @@
 
   <!--blog-->    
   <div class="card col-lg-4 col-sm-12" style="width: 18rem;">
-      <img src="blog.png" class="card-img-top" alt="...">
+      <img src="images/blog.png" class="card-img-top" alt="...">
       <div class="card-body">
       <h2 class="card-title">Daily Journal</h2>
       <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#kar2">Know More</button>    
@@ -181,11 +181,11 @@
 <div class="modal fade bd-example-modal-lg" id="kar2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 <div class="modal-dialog modal-lg">
 <div class="modal-content modalhead">
-   <img src="blog.png" class="card-img-top" alt="...">
+   <img src="images/blog.png" class="card-img-top" alt="...">
    <h1>Daily Journal</h1>
    <hr />
    <p>A blog application made with HTML,CSS,Nodejs,MongoDB</p>
-   <button type="button" class="btn"></button>
+   <button type="button" class="btn btn-primary inner">View Website</button>
 </div>
 </div>
 </div>
@@ -193,7 +193,7 @@
 
  <!--todo-->    
  <div class="card col-lg-4 col-sm-12" style="width: 18rem;">
-    <img src="todo.png" class="card-img-top" alt="...">
+    <img src="images/todo.png" class="card-img-top" alt="...">
     <div class="card-body">
     <h2 class="card-title">todo application</h2>
     <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#kar3">Know More</button>    
@@ -204,11 +204,11 @@
 <div class="modal fade bd-example-modal-lg" id="kar3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 <div class="modal-dialog modal-lg">
 <div class="modal-content modalhead">
- <img src="todo.png" class="card-img-top" alt="...">
+ <img src="images/todo.png" class="card-img-top" alt="...">
  <h1>todo application</h1>
  <hr />
  <p>A todo application made with HTML,CSS,Nodejs,MongoDB. It can be used to make any list dynamically.</p>
- <button type="button" class="btn"></button>
+ <button type="button" class="btn btn-primary inner">View Website</button>
 </div>
 </div>
 </div>
@@ -246,13 +246,44 @@
         <section id= "contact">
              <div class="flex">
                  <div >
-                     <h1 style="font-weight: 700">Contact</h1>
+                     <h1 style="font-weight: 700; color: white;">Contact</h1>
+                     
                  </div>
              </div>
-            
+             <div class="container">
+               <form class="fill" method="POST" action="/">
+                 <h6>Have a question or want to work together?</h6>
+                <input placeholder="John Doe" type="text" name="name"  required>
+                <input placeholder="Enter email" type="email" name="email"  required>
+                <textarea placeholder="Your Message" type="text" name="message" id="msg"></textarea>
+                <button class="button" type="submit">
+                    Submit
+                </button>
+              </form>  
+            </div>  
                 
             </div>
         </section>
+
+        <footer>
+            <div class="middle">
+                <a class="btn" href="#">
+                    <i class="fab fa-github"></i>
+                </a>
+              <a class="btn" href="#">
+                  <i class="fab fa-facebook-f"></i>
+              </a>
+              <a class="btn" href="#">
+                  <i class="fab fa-instagram"></i>
+              </a>
+              <a class="btn" href="#">
+                  <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+            <div class="foot">
+                <p>KARAN BALODI <span class="highlight">&copy;2019</span></p>
+            </div>
+        </footer> 
       
         
         
@@ -264,19 +295,14 @@
         <script src="https://kit.fontawesome.com/a08b218cf6.js" crossorigin="anonymous"></script>
         
         <!--local scripts-->
-        <script src="particles.js"></script>
-        <script src="app.js"></script>
+        <script src="js/particles.js"></script>
+        <script src="js/app.js"></script>
         <script>
-           $("#tin").hover(function(){
-               $("#tindog").toggleClass("visibl textproject");
-           });
-           $("#todo").hover(function(){
-               $("#todopro").toggleClass("visibl textproject");
-           });
-           $("#blog").hover(function(){
-               $("#blogpro").toggleClass("visibl textproject");
-           });
+           
+  
         </script>
+
+
     </body>
 </html>
 
