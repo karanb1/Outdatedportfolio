@@ -11,20 +11,29 @@ body{
     z-index: 0;
 }
 
-header .flex {
+/*header .flex {
     position: absolute;
     top: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}*/
+
+header .flex {
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 
 .text {
     text-align: center;
-    margin: 0 0 0 0;
-    font-size: 2rem;
+    font-size: 3.2rem;
     line-height: 3.2rem;
     z-index: 1;
     color: #fff;
@@ -42,6 +51,11 @@ header .flex {
     color: #fff;
     cursor: pointer;
     transition: all 0.7s;
+}
+
+.button a{
+  text-decoration: none;
+  color: white;
 }
 
 .button:hover {
@@ -183,7 +197,7 @@ h1{
 #education ul{
     list-style-type: none;
     margin: 0;
-    padding-left: 10px;
+    padding: 0;
 }
 
 #education .card-text {
@@ -280,6 +294,16 @@ box-shadow: 0 0 0 0.1rem #04C2C9;
 box-shadow: 0 0 0 0.1rem #04C2C9;
 }
 
+#projects a{
+    color: white;
+    text-decoration: none;
+}
+
+#projects a:hover{
+    color: #00000070;
+    text-decoration: none;
+}
+
 #contact {
     background-color: #252934;
     height: 100vh;
@@ -329,6 +353,12 @@ textarea{
     color: #04C2C9;
     padding: 0 0 1.5rem 0;
     font-weight: 600;
+}
+
+input:-internal-autofill-selected {
+    background-color: #1B242F !important;
+    background-image: none !important;
+    color: #fff !important;
 }
 
 footer{
@@ -411,9 +441,9 @@ footer .foot{
     font-size: 0.8rem;
 }
 @media screen and (min-width: 1000px){
-   header .flex{
+   /*header .flex{
         left: 24%;
-    }
+    }*/
 
    .text{
        font-size: 3rem;
@@ -443,12 +473,6 @@ footer .foot{
 
 }
 
-@media screen and (min-width: 450px)and(max-width: 1000px){
-    header .flex{
-        left: 20%;
-    }
-
-}
 
 
 
