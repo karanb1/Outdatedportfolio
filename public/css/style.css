@@ -50,7 +50,7 @@ header .flex {
     z-index: 1;
     color: #fff;
     cursor: pointer;
-    transition: all 0.7s;
+    transition: all 1s;
 }
 
 .button a{
@@ -61,7 +61,7 @@ header .flex {
 .button:hover {
     background-color: #04C2C9;
     border-color: #04C2C9; 
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .button:hover .fa-arrow-right{
@@ -74,6 +74,18 @@ nav{
     background-color: #1B242F;
     font-size: 1.6rem;
     box-shadow: 0 5px#04C2C9;
+}
+h1::after{
+  content: "";
+  position: absolute;
+  width: 8%;
+  height: 4px;
+  bottom: 0px;
+  background-color: #1B242F;
+}
+
+#contact h1::after{
+    background-color: #fff;
 }
 
 .custom-toggler.navbar-toggler {
@@ -94,9 +106,11 @@ nav{
 }
 
 h1{
+    font-size: 3rem;
     display: flex;
     justify-content: center;
-    padding-top: 60px;
+    padding: 60px 0 10px 0;
+    position: relative;
 }
 
 #left img{
@@ -189,6 +203,8 @@ h1{
     margin-right: 25px;
     margin-bottom: 20px;
 }
+
+
 
 #education .card-title{
     font-size: 1.5rem;
@@ -306,7 +322,7 @@ box-shadow: 0 0 0 0.1rem #04C2C9;
 
 #contact {
     background-color: #252934;
-    height: 100vh;
+    height: 110vh;
 }
 
 .fill{
@@ -315,6 +331,16 @@ box-shadow: 0 0 0 0.1rem #04C2C9;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.fill a{
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.fill a:hover{
+   color: #04C2C9
 }
 
 input{
@@ -440,13 +466,15 @@ footer .foot{
     align-items: center;
     font-size: 0.8rem;
 }
+
+#success{
+    color: #04C2C9;
+    padding: 10px;
+}
 @media screen and (min-width: 1000px){
-   /*header .flex{
-        left: 24%;
-    }*/
 
    .text{
-       font-size: 3rem;
+       font-size: 3.2rem;
    }
    .button{ 
        font-size: 1.2rem;
@@ -473,6 +501,24 @@ footer .foot{
 
 }
 
+@media screen and (min-width: 600px) and (max-width:800px){
 
+    .text{
+        font-size: 2rem;
+    }
+   .card{
+       margin-right: 5px;
+       margin-left: 5px;
+   }
 
+}
 
+@media screen and (min-width: 300px) and (max-width:800px){
+
+    .text{
+        font-size: 1.8rem;
+    }
+    #contact{
+        height: 90vh;
+    }
+}

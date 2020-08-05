@@ -1,4 +1,5 @@
 const admin = require("firebase-admin");
+const dotenv = require("dotenv-json");
 const serviceAccount = require("./portfolio-c2c25-firebase-adminsdk-ixqbu-bbf16b2d73.json");
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
@@ -18,20 +19,25 @@ app.use(express.static("public"));
         res.sendFile(__dirname +"/index.html");
   });
 
-app.post("/",function(req,res){
-    var name = req.body.name;
-    var email = req.body.email;
-    var message = req.body.message;
-        const quoteData={
-            name : name,
-            email: email,
-            message: message
-        };
-            var postsRef = ref.child("info");
-        // db.collection("sampleData").doc("info").set(quoteData).then(()=>{
-            postsRef.push().set(quoteData);
-            res.redirect("/");
-         });
+//app.post("/",function(req,res){
+    // var name = req.body.name;
+    // var email = req.body.email;
+    // var message = req.body.message;
+    
+    //     const quoteData={
+    //        name : name,
+    //        email: email,
+    //         message: message
+    //     };
+    //         var postsRef = ref.child("info");
+    //         postsRef.push().set(quoteData);
+    //        // res.redirect("/");
+    //      });
+
+app.get("/download",function(req,res){
+   var file= __dirname +"/Karan's-Resume.pdf";
+   res.download(file);
+});         
 
 app.listen(4000,function(){
     console.log("server started"); 
