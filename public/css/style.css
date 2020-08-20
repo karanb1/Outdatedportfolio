@@ -237,12 +237,6 @@ margin-top: 60px;
   text-align: center
 }
 
-.heading-modal{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
 hr {
     border:none;
     height: 20px;
@@ -367,7 +361,7 @@ textarea{
 }
 
 #resume-link{
-    color: blue;
+    color: #04C2C9;
     text-decoration: underline;
 }
 
