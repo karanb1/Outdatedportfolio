@@ -366,6 +366,11 @@ textarea{
     font-weight: 600;
 }
 
+#resume-link{
+    color: blue;
+    text-decoration: underline;
+}
+
 footer{
     background: #1B242F;
     height: 25vh;
