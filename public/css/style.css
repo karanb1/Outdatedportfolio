@@ -169,6 +169,12 @@ h1{
 .bar:nth-of-type(8) .percentage{
     width: 60%;
 }
+.bar:nth-of-type(9) .percentage{
+    width: 70%;
+}
+.bar:nth-of-type(10) .percentage{
+    width: 50%;
+}
 /*about ends*/
 /*education*/
 #education{
@@ -229,6 +235,12 @@ margin-top: 60px;
 #projects p{
   margin: 0 10% 2rem 10%;
   text-align: center
+}
+
+.heading-modal{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 hr {
